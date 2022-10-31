@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task1
+        var InputNumber = 63;
+        var startNum = 2;
+        var caunt = 1;
+        while (InputNumber > startNum)
+        {
+            startNum *= 2;
+            caunt++;
+                
+        }
+        var first = InputNumber - startNum/2;
+        var second = startNum - InputNumber;
+        if (first <= second)
+        {
+            console.log(--caunt);
+        }
+        else
+        {
+            console.log(caunt);
+        }
+        
+        //Task2
+        let input = 553;
+        
+        let res = 0;
+        while (input > 0)
+        {
+            let value = input % 10;
+            input /= 10;
+            res += value;
+            
+        }
+        
+        console.log(Math.round(res));
+        
+
+        //Task3
+        var count = 0;
+        var num = 452
+        if (num > 0 && num != 0)
+        {
+            for (var i = 1; i <= num; i++)
+            {
+                if (num % i == 0)
+                {
+                    count++;
+                }
+
+            }
+            if (count > 2)
+            {
+                console.log("murekkebdi");
+            }
+            else
+            {
+                console.log("sadedi");
+            }
+        }
+        else
+        {
+            console.log("incorrect input");
+        }
+    </script>
+</body>
+</html>
